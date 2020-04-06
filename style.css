@@ -1,10 +1,17 @@
-main {
-    background-color: blue;
-    text-align:center;
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 150px auto 100px;
 }
 
 ul {
-        list-style-type: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
