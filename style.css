@@ -1,16 +1,19 @@
-html, body {
-    width: 100vw;
+html, body { /*expand body to cover the entire viewport*/
     min-height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
 }
 
 body {
-    display: grid;
+    display: grid; /*turn body into a grid container*/
     grid-template-rows: 150px auto 100px;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
 }
 
-ul {
+ul { /*remove the bullets and the margins and padding from the list*/
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,6 +21,18 @@ ul {
 
 li {
     display:inline;
+}
+
+#navbar {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
 }
 
 #left-navbar {
