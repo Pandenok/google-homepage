@@ -6,6 +6,8 @@ html, body { /*expand body to cover the entire viewport*/
 }
 
 body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
     display: grid; /*turn body into a grid container*/
     grid-template-rows: 150px auto 100px;
     grid-template-areas: "header"
@@ -23,16 +25,29 @@ li {
     display:inline;
 }
 
+a {
+    text-decoration: none;
+    color: #000; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 #navbar {
     grid-area: header;
+    align-self: start;
 }
 
 main {
     grid-area: main;
+    place-self: center; /*align-self+justify-self*/
 }
 
 footer {
     grid-area: footer;
+    align-self: end;
+    background-color: #f2f2f2;
 }
 
 #left-navbar {
