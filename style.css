@@ -26,6 +26,7 @@ li {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: #000; 
 }
@@ -48,6 +49,13 @@ footer {
     grid-area: footer;
     align-self: end;
     background-color: #f2f2f2;
+    line-height: 40px;
+    margin-left: -27px;
+}
+
+footer a {
+    padding-left: 27px; /*add spacing between links*/
+
 }
 
 #left-navbar {
@@ -60,8 +68,10 @@ footer {
 
 #left-footer {
     float:left;
+    margin-left: 30px;
 }
 
 #right-footer {
     float:right;
+    margin-right: 30px;
 }
