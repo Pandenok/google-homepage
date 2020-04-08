@@ -47,9 +47,23 @@ a:hover {
     padding-top: 10px;
 }
 
+#sign-in {
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    background-color: #4285f4;
+    color: #fff;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px; 
+}
+
 main {
     grid-area: main;
-    place-self: center; /*align-self+justify-self*/
+    justify-self: center; /*place-self=*align-self+justify-self*/
+}
+
+#search-bar {
+
 }
 
 footer {
