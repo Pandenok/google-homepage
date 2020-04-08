@@ -28,7 +28,8 @@ li {
 a {
     display: inline-block;
     text-decoration: none;
-    color: #000; 
+    color: #000;
+    opacity: 0.75; 
 }
 
 a:hover {
