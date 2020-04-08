@@ -36,11 +36,30 @@ a:hover {
     text-decoration: underline;
 }
 
+/*There are two ways to create a horizontal navigation bar. 
+
+1. Using inline (by default, <li> elements are block elements. 
+Here, we remove the line breaks before and after each list item, 
+to display them on one line) or 
+
+2. floating list items. 
+Right-align links by floating the list items to the right (float:right;)*/
+
 #navbar {
     grid-area: header;
     align-self: start;
     margin-left: -15px;
     line-height: 40px;
+}
+
+#left-navbar {
+    float:left;
+    margin-left: 30px;
+}
+
+#right-navbar {
+    float:right;
+    margin-right: 30px;
 }
 
 #navbar a {
@@ -73,8 +92,15 @@ main {
 }
 
 #search-bar {
-    width: 500px;
-    margin: auto;
+   width: 482px;
+   margin: auto;
+   /*display: flex;*/
+   /*flex-direction: row;*/
+   border:1px solid #dfe1e5;
+   box-shadow:none;
+   border-radius:24px;
+   height:44px;
+   margin:0 auto;
 }
 
 #logo {
@@ -91,6 +117,7 @@ main {
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 4px;
+    font-size: 14px;
     color: #5F6368;
     margin: 11px 4px;
     padding: 0 16px;
@@ -116,16 +143,6 @@ footer {
 footer a {
     padding-left: 27px; /*add spacing between links*/
 
-}
-
-#left-navbar {
-    float:left;
-    margin-left: 30px;
-}
-
-#right-navbar {
-    float:right;
-    margin-right: 30px;
 }
 
 #left-footer {
