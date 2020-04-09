@@ -122,8 +122,10 @@ main {
 }
 
 #input {
+    background-color: transparent;
     border: none;
-    padding: 5px 8px 0 16px;
+    align-self: stretch;
+    width: 400px;  
 }
 
 #mic {
