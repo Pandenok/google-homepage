@@ -94,10 +94,11 @@ main {
 #logo {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 39px;
 }
 
 #search-form {
-   width: 482px;
+   width: 589px;
    margin: auto;
    display: flex;
    border:1px solid #dfe1e5;
@@ -125,7 +126,7 @@ main {
     background-color: transparent;
     border: none;
     align-self: stretch;
-    width: 400px;  
+    width: 500px;  
 }
 
 #mic {
@@ -137,6 +138,7 @@ main {
 #search-buttons {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 18px;
 }
 
 .search-button {
@@ -149,7 +151,8 @@ main {
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
-    text-align: center;  
+    text-align: center;
+    cursor: pointer;  
 }
 
 .search-button:hover {
